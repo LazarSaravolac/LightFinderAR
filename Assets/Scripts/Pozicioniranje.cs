@@ -33,9 +33,9 @@ public class Pozicioniranje : MonoBehaviour
     void Update()
     {
         tr.position = CurrentLocationInScene;
-        //tr.rotation = CurrentRotation;
+        tr.rotation = CurrentRotation;
 
-        if(compassHeadings.Count == 0)
+        /*if(compassHeadings.Count == 0)
         {
             for(int i = 0; i < CompassLag; i++)
             {
@@ -48,7 +48,7 @@ public class Pozicioniranje : MonoBehaviour
 
         compassHeadings.Dequeue();
         compassHeadings.Enqueue(inputManager.CompassHeading);
-        previousGyro = inputManager.GyroAttitude;
+        previousGyro = inputManager.GyroAttitude;*/
     }
 
     Quaternion CompassRotation()
